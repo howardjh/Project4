@@ -27,5 +27,9 @@
         android:id="@+id/fragmentResult"
         android:name="com.example.project3.FragmentResult"
         android:label="fragment_result"
-        tools:layout="@layout/fragment_result" />
+        tools:layout="@layout/fragment_result" >
+        <action
+            android:id="@+id/action_fragmentResult_to_fragment_welcome"
+            app:destination="@id/fragment_welcome" />
+    </fragment>
 </navigation>
