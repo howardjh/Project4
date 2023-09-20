@@ -23,20 +23,20 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/operand1"
+            android:id="@+id/tvOperand1"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />
 
         <TextView
-            android:id="@+id/operator"
+            android:id="@+id/tvOperator"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:gravity="center" />
 
         <TextView
-            android:id="@+id/operand2"
+            android:id="@+id/tvOperand2"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1" />

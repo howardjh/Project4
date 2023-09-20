@@ -74,7 +74,7 @@
         android:id="@+id/operationRadioGroup"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="200dp"
+        android:layout_marginLeft="175dp"
         android:layout_marginTop="10dp"
         app:layout_constraintLeft_toRightOf="@+id/difficultyRadioGroup"
         app:layout_constraintTop_toTopOf="@+id/linearLayout"
@@ -127,7 +127,7 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/bPlus"
+                android:id="@+id/bMinus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
@@ -144,7 +144,7 @@
                 android:textAlignment="center" />
 
             <Button
-                android:id="@+id/bMinus"
+                android:id="@+id/bPlus"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"

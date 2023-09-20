@@ -17,17 +17,32 @@
     <fragment
         android:id="@+id/fragement_questions"
         android:name="com.example.project3.FragmentQuestions"
-        android:label="fragment_fragement_questions"
+        android:label="fragment_fragment_questions"
         tools:layout="@layout/fragment_questions" >
+        <argument
+            android:name="difficulty"
+            app:argType="string"/>
+        <argument
+            android:name="operation"
+            app:argType="string"/>
+        <argument
+            android:name="numOfQuestions"
+            app:argType="integer"/>
         <action
             android:id="@+id/action_fragement_questions_to_fragmentResult"
-            app:destination="@id/fragmentResult" />
+            app:destination="@id/fragment_result" />
     </fragment>
     <fragment
-        android:id="@+id/fragmentResult"
+        android:id="@+id/fragment_result"
         android:name="com.example.project3.FragmentResult"
         android:label="fragment_result"
         tools:layout="@layout/fragment_result" >
+        <argument
+            android:name="numOfQuestions"
+            app:argType="integer"/>
+        <argument
+            android:name="totalCorrect"
+            app:argType="integer"/>
         <action
             android:id="@+id/action_fragmentResult_to_fragment_welcome"
             app:destination="@id/fragment_welcome" />
