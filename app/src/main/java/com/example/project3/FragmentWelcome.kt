@@ -19,6 +19,8 @@ private lateinit var btnDifficulty: List<Button>
 private var operation = ""
 private var difficulty = ""
 private var numOfQuestions = 0
+private var x = 1
+
 
 
 /**
