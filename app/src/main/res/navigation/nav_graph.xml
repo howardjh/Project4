@@ -10,12 +10,18 @@
         android:name="com.example.project3.FragmentWelcome"
         android:label="fragment_welcome"
         tools:layout="@layout/fragment_welcome" >
+        <argument
+            android:name="pastNumOfQuestions"
+            app:argType="integer"/>
+        <argument
+            android:name="pastNumCorrect"
+            app:argType="integer"/>
         <action
-            android:id="@+id/action_fragment_welcome_to_fragement_questions"
-            app:destination="@id/fragement_questions" />
+            android:id="@+id/action_fragment_welcome_to_fragment_questions"
+            app:destination="@id/fragment_questions" />
     </fragment>
     <fragment
-        android:id="@+id/fragement_questions"
+        android:id="@+id/fragment_questions"
         android:name="com.example.project3.FragmentQuestions"
         android:label="fragment_fragment_questions"
         tools:layout="@layout/fragment_questions" >
@@ -29,22 +35,7 @@
             android:name="numOfQuestions"
             app:argType="integer"/>
         <action
-            android:id="@+id/action_fragement_questions_to_fragmentResult"
-            app:destination="@id/fragment_result" />
-    </fragment>
-    <fragment
-        android:id="@+id/fragment_result"
-        android:name="com.example.project3.FragmentResult"
-        android:label="fragment_result"
-        tools:layout="@layout/fragment_result" >
-        <argument
-            android:name="numOfQuestions"
-            app:argType="integer"/>
-        <argument
-            android:name="totalCorrect"
-            app:argType="integer"/>
-        <action
-            android:id="@+id/action_fragmentResult_to_fragment_welcome"
+            android:id="@+id/action_fragment_questions_to_fragment_welcome"
             app:destination="@id/fragment_welcome" />
     </fragment>
 </navigation>
